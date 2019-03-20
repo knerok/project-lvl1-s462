@@ -1,6 +1,6 @@
 {
   "name": "project_x_knerok",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -21,5 +21,16 @@
     "@babel/core": "^7.4.0",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.1"
-  }
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knerok/project-lvl1-s462.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knerok/project-lvl1-s462/issues"
+  },
+  "homepage": "https://github.com/knerok/project-lvl1-s462#readme"
 }
