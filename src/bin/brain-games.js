@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { resultt } from '..';
+import asd from '..';
 
-resultt();
+asd();
