@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-import {result} from '..'
-result();
+import { resultt } from '..';
+
+resultt();
