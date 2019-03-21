@@ -1,4 +1,3 @@
 #!/usr/bin/env node
-import { result } from '..';
-
+import {result} from '..'
 result();
