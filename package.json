@@ -1,9 +1,10 @@
 {
   "name": "project_x_knerok",
-  "version": "1.2.5",
+  "version": "1.2.7",
   "description": "This is my project",
   "main": "index.js",
   "bin": {
+    "brain-calc": "dist/bin/brain-calc.js",
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js"
   },

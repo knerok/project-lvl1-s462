@@ -3,4 +3,9 @@
 
 <a href="https://travis-ci.org/knerok/project-lvl1-s462"><img src="https://travis-ci.org/knerok/project-lvl1-s462.svg?branch=master"></a>
 
+Task 4
 https://asciinema.org/a/kcwr5qInGIFWdVGUL6K0ziOo9
+
+Task 5
+https://asciinema.org/a/Di9TkhmfLUExaqUiXdTaoaOsu
+
