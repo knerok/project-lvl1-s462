@@ -28,7 +28,7 @@ const solution = () => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${actual}!`);
       indicator = -1;
     }
-    if (indicator === 3) console.log(`Congratulations, ${actual}!`);
   }
+  if (indicator === 3) console.log(`Congratulations, ${actual}!`);
 };
 export default solution;
