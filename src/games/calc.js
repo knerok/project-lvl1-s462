@@ -1,15 +1,21 @@
+import basics from '../core';
+
+const annotation = 'What is the result of the expression?\n';
+
 const generateRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
-const calculations = () => {
+const gameCalc = () => {
   const random1 = generateRandom(-100000, 100000);
   const random2 = generateRandom(-100000, 100000);
-  const randomSign = generateRandom(1, 99);
-  let sign = '';
+  const randomSign = generateRandom(0, 2);
+  const signs = ['+', '-', '*'];
   let correctAnswer = 0;
-  if (randomSign >= 1 && randomSign <= 33) { sign = '+'; correctAnswer = random1 + random2; }
-  if (randomSign >= 34 && randomSign <= 66) { sign = '-'; correctAnswer = random1 - random2; }
-  if (randomSign >= 67 && randomSign <= 99) { sign = '*'; correctAnswer = random1 * random2; }
-  console.log(`Question: ${random1} ${sign} ${random2}`);
-  return correctAnswer;
+  if (signs[randomSign] === '+') correctAnswer = random1 + random2;
+  if (signs[randomSign] === '-') correctAnswer = random1 - random2;
+  if (signs[randomSign] === '*') correctAnswer = random1 * random2;
+  return [`${random1} ${signs[randomSign]} ${random2}`, correctAnswer];
 };
-export default calculations;
+
+const lastPreparations = () => basics(annotation, gameCalc);
+
+export default lastPreparations;

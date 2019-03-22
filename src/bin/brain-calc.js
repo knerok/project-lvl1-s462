@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import asd from '../core';
+import asd from '../games/calc';
 
 asd();

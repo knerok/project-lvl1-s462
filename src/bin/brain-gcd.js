@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import asd from '../core1';
+import asd from '../games/gcd';
 
-asd('Find the greatest common divisor of given numbers.\n', 'gcd');
+asd();

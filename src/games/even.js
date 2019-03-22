@@ -1,3 +1,7 @@
+import basics from '../core';
+
+const annotation = 'Answer "yes" if number even otherwise answer "no".\n';
+
 const generateRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
 const isEven = (n) => {
@@ -10,4 +14,6 @@ const gameEven = () => {
   return [`${random}`, (isEven(random) ? 'yes' : 'no')];
 };
 
-export default gameEven;
+const lastPreparations = () => basics(annotation, gameEven);
+
+export default lastPreparations;

@@ -1,3 +1,7 @@
+import basics from '../core';
+
+const annotation = 'Find the greatest common divisor of given numbers.\n';
+
 const generateRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
 const nod = (a, b) => {
@@ -7,14 +11,16 @@ const nod = (a, b) => {
   return nod(b, a % b);
 };
 
-const calculations = () => {
+const gameGcd = () => {
   let random1 = 0;
   let random2 = 0;
   let correctAnswer = 0;
-  random1 = generateRandom(0, 100000);
-  random2 = generateRandom(0, 100000);
-  correctAnswer = nod(random1, random2);
-  console.log(`Question: ${random1} ${random2}`);
-  return correctAnswer;
+  random1 = generateRandom(-100000, 100000);
+  random2 = generateRandom(-100000, 100000);
+  correctAnswer = nod(Math.abs(random1), Math.abs(random2));
+  return [`${random1} ${random2}`, correctAnswer];
 };
-export default calculations;
+
+const lastPreparations = () => basics(annotation, gameGcd);
+
+export default lastPreparations;

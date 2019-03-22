@@ -5,7 +5,11 @@
 
 Task 4
 https://asciinema.org/a/P4AhS4izreA5AyjeczS2LzGOT
+https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
 
 Task 5
-https://asciinema.org/a/2mTvQdM4jkEB2VgVwBL2RqaGf
+https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
+
+Task 6
+https://asciinema.org/a/Pz4QzkvM4FSKepFNS9gWmbDOF
 
