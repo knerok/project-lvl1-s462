@@ -14,7 +14,7 @@ const generateDataGameGcd = () => {
   const random1 = generateRandom(0, 100000);
   const random2 = generateRandom(0, 100000);
   const question = `${random1} ${random2}`;
-  const correctAnswer = getGcd(Math.abs(random1), Math.abs(random2));
+  const correctAnswer = getGcd(random1, random2);
   return [question, correctAnswer];
 };
 
