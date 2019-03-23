@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
 
-const preResult = (annotation, games) => {
+const finalRound = 3;
+
+const core = (annotation, games) => {
   console.log('Welcome to the Brain Games!');
   console.log(annotation);
   const actual = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${actual}!\n`);
-  const finalRound = 3;
   for (let round = 1; round <= finalRound; round += 1) {
     const resultsOfGame = games();
     const question = resultsOfGame[0];
@@ -21,6 +22,5 @@ const preResult = (annotation, games) => {
       break;
     }
   }
-  return 0;
 };
-export default preResult;
+export default core;

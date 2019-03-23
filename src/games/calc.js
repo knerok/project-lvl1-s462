@@ -1,21 +1,30 @@
-import basics from '../core';
+import getCore from '../core';
+import generateRandom from '../utils';
 
 const annotation = 'What is the result of the expression?\n';
 
-const generateRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
-
-const gameCalc = () => {
+const getDataGameCalc = () => {
   const random1 = generateRandom(-100000, 100000);
   const random2 = generateRandom(-100000, 100000);
-  const randomSign = generateRandom(0, 2);
   const signs = ['+', '-', '*'];
+  const numberOfSigns = signs.length;
+  const randomSign = generateRandom(0, numberOfSigns - 1);
+  const question = `${random1} ${signs[randomSign]} ${random2}`;
   let correctAnswer = 0;
-  if (signs[randomSign] === '+') correctAnswer = random1 + random2;
-  if (signs[randomSign] === '-') correctAnswer = random1 - random2;
-  if (signs[randomSign] === '*') correctAnswer = random1 * random2;
-  return [`${random1} ${signs[randomSign]} ${random2}`, correctAnswer];
+  switch (signs[randomSign]) {
+    case '-':
+      correctAnswer = random1 - random2;
+      break;
+    case '*':
+      correctAnswer = random1 * random2;
+      break;
+    default:
+      correctAnswer = random1 + random2;
+      break;
+  }
+  return [question, correctAnswer];
 };
 
-const lastPreparations = () => basics(annotation, gameCalc);
+const makeLastPreparations = () => getCore(annotation, getDataGameCalc);
 
-export default lastPreparations;
+export default makeLastPreparations;

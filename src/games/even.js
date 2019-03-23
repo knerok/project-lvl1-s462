@@ -1,19 +1,20 @@
-import basics from '../core';
+import getCore from '../core';
+import generateRandom from '../utils';
 
 const annotation = 'Answer "yes" if number even otherwise answer "no".\n';
-
-const generateRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
 const isEven = (n) => {
   const p = n < 0 ? n * (-1) : n;
   return p % 2 === 0;
 };
 
-const gameEven = () => {
+const getDataGameEven = () => {
   const random = generateRandom(-100000, 100000);
-  return [`${random}`, (isEven(random) ? 'yes' : 'no')];
+  const question = `${random}`;
+  const correctAnswer = isEven(random) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-const lastPreparations = () => basics(annotation, gameEven);
+const makeLastPreparations = () => getCore(annotation, getDataGameEven);
 
-export default lastPreparations;
+export default makeLastPreparations;
