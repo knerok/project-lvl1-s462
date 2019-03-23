@@ -12,4 +12,8 @@ https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
 
 Task 6
 https://asciinema.org/a/Pz4QzkvM4FSKepFNS9gWmbDOF
+https://asciinema.org/a/7yIpIXKHXr8pRuj1OBfxKYjo4
 
+
+Task 7
+https://asciinema.org/a/7yIpIXKHXr8pRuj1OBfxKYjo4
