@@ -1,4 +1,4 @@
-import getCore from '../core';
+import startGame from '../core';
 import generateRandom from '../utils';
 
 const annotation = 'Answer "yes" if number even otherwise answer "no".\n';
@@ -8,7 +8,7 @@ const isEven = (n) => {
   return p % 2 === 0;
 };
 
-const getDataGameEven = () => {
+const generateDataGameEven = () => {
   const random = generateRandom(-100000, 100000);
   const question = `${random}`;
   const correctAnswer = isEven(random) ? 'yes' : 'no';
@@ -16,5 +16,5 @@ const getDataGameEven = () => {
 };
 
 export default () => {
-  getCore(annotation, getDataGameEven);
+  startGame(annotation, generateDataGameEven);
 };

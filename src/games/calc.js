@@ -1,9 +1,9 @@
-import getCore from '../core';
+import startGame from '../core';
 import generateRandom from '../utils';
 
 const annotation = 'What is the result of the expression?\n';
 
-const getDataGameCalc = () => {
+const generateDataGameCalc = () => {
   const random1 = generateRandom(-100000, 100000);
   const random2 = generateRandom(-100000, 100000);
   const signs = ['+', '-', '*'];
@@ -26,5 +26,5 @@ const getDataGameCalc = () => {
 };
 
 export default () => {
-  getCore(annotation, getDataGameCalc);
+  startGame(annotation, generateDataGameCalc);
 };
