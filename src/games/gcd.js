@@ -3,11 +3,11 @@ import generateRandom from '../utils';
 
 const annotation = 'Find the greatest common divisor of given numbers.\n';
 
-const getNod = (a, b) => {
+const getGcd = (a, b) => {
   if (!b) {
     return a;
   }
-  return getNod(b, a % b);
+  return getGcd(b, a % b);
 };
 
 const getDataGameGcd = () => {
@@ -15,7 +15,7 @@ const getDataGameGcd = () => {
   const random2 = generateRandom(-100000, 100000);
   const question = `${random1} ${random2}`;
   let correctAnswer = 0;
-  correctAnswer = getNod(Math.abs(random1), Math.abs(random2));
+  correctAnswer = getGcd(Math.abs(random1), Math.abs(random2));
   return [question, correctAnswer];
 };
 
