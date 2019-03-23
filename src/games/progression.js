@@ -17,7 +17,7 @@ const getQuestion = (firstElement, diff, emptyPosition) => {
 
 const generateDataGameProgression = () => {
   const firstElement = generateRandom(-100000, 100000);
-  const diff = generateRandom(1, 50);
+  const diff = generateRandom(-100, 100);
   const emptyPosition = generateRandom(1, numberOfElements);
   const question = getQuestion(firstElement, diff, emptyPosition);
   const correctAnswer = (firstElement + diff * (emptyPosition - 1));

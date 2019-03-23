@@ -8,11 +8,9 @@ const core = (annotation, games) => {
   const actual = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${actual}!\n`);
   for (let i = 1; i <= numOfRounds; i += 1) {
-    const resultsOfGame = games();
-    const question = resultsOfGame[0];
+    const [question, correctAnswer] = games();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    const correctAnswer = resultsOfGame[1];
     if (answer === correctAnswer.toString()) {
       console.log('Correct!');
     } else {
