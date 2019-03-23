@@ -12,13 +12,13 @@ const isPrime = (n) => {
   return true;
 };
 
-const getDataGameEven = () => {
+const getDataGamePrime = () => {
   const random = generateRandom(-100000, 100000);
   const question = `${random}`;
   const correctAnswer = isPrime(Math.abs(random)) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const makeLastPreparations = () => getCore(annotation, getDataGameEven);
+const makeLastPreparations = () => getCore(annotation, getDataGamePrime);
 
 export default makeLastPreparations;
