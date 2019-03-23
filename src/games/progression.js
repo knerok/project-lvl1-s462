@@ -1,29 +1,29 @@
-import getCore from '../core';
+import startGame from '../core';
 import generateRandom from '../utils';
 
 const annotation = 'What number is missing in the progression?\n';
 
 const numberOfElements = 10;
 
-const getQuestion = (firstProgressionElement, progressionDiff, randomEmptyPlace) => {
-  let currentQuestion = randomEmptyPlace === 1 ? '..' : firstProgressionElement.toString();
-  let currentProgressionElement = firstProgressionElement;
-  for (let i = 2; i <= numberOfElements; i += 1) {
-    currentProgressionElement += progressionDiff;
-    currentQuestion += randomEmptyPlace === i ? ' ..' : ` ${currentProgressionElement}`;
+const getQuestion = (firstElement, diff, emptyPosition) => {
+  let currentQuestion = '';
+  let currentElement = 0;
+  for (let i = 0; i < numberOfElements; i += 1) {
+    currentElement = firstElement + diff * i;
+    currentQuestion += emptyPosition === i + 1 ? ' ..' : ` ${currentElement}`;
   }
   return currentQuestion;
 };
 
-const getDataGameProgression = () => {
-  const firstProgressionElement = generateRandom(-100000, 100000);
-  const progressionDiff = generateRandom(1, 50);
-  const randomEmptyPlace = generateRandom(1, numberOfElements);
-  const question = getQuestion(firstProgressionElement, progressionDiff, randomEmptyPlace);
-  const correctAnswer = (firstProgressionElement + progressionDiff * (randomEmptyPlace - 1));
+const generateDataGameProgression = () => {
+  const firstElement = generateRandom(-100000, 100000);
+  const diff = generateRandom(1, 50);
+  const emptyPosition = generateRandom(1, numberOfElements);
+  const question = getQuestion(firstElement, diff, emptyPosition);
+  const correctAnswer = (firstElement + diff * (emptyPosition - 1));
   return [question, correctAnswer];
 };
 
-const makeLastPreparations = () => getCore(annotation, getDataGameProgression);
-
-export default makeLastPreparations;
+export default () => {
+  startGame(annotation, generateDataGameProgression);
+};

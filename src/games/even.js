@@ -15,6 +15,6 @@ const getDataGameEven = () => {
   return [question, correctAnswer];
 };
 
-const makeLastPreparations = () => getCore(annotation, getDataGameEven);
-
-export default makeLastPreparations;
+export default () => {
+  getCore(annotation, getDataGameEven);
+};
