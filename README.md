@@ -13,7 +13,7 @@ As part of the project, I implemented a set of the following mini-games:
 
 ## Setup
 ```
-$ npm i -g braingames-s462
+$ npm -g install project_x_knerok
 ```
 <a href="https://asciinema.org/a/6zGuaFvr6w6lKDsr02enXmA20" target="_blank"><img src="https://asciinema.org/a/6zGuaFvr6w6lKDsr02enXmA20.svg" /></a>
 
