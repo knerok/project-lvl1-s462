@@ -14,7 +14,7 @@ const isPrime = (n) => {
 
 const generateDataGamePrime = () => {
   const random = generateRandom(-100000, 100000);
-  const question = `${random}`;
+  const question = ` ${random}`;
   const correctAnswer = isPrime(random) ? 'yes' : 'no';
   return [question, correctAnswer];
 };

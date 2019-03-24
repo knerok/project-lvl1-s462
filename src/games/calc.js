@@ -9,7 +9,7 @@ const generateDataGameCalc = () => {
   const signs = ['+', '-', '*'];
   const numberOfSigns = signs.length;
   const randomSign = generateRandom(0, numberOfSigns - 1);
-  const question = `${random1} ${signs[randomSign]} ${random2}`;
+  const question = ` ${random1} ${signs[randomSign]} ${random2}`;
   let correctAnswer = 0;
   switch (signs[randomSign]) {
     case '-':
