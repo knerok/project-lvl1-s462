@@ -10,29 +10,38 @@ As part of the project, I implemented a set of the following mini-games:
 4. Game "Arithmetic progression"
 5. Game "Is it a prime number?"
 
-## Установка
+## Setup
 ```
 $ npm i -g braingames-s462
 ```
+<a href="https://asciinema.org/a/6zGuaFvr6w6lKDsr02enXmA20" target="_blank"><img src="https://asciinema.org/a/6zGuaFvr6w6lKDsr02enXmA20.svg" /></a>
+
 ## Games
 ### Game: "Is it an even number?"
 ```
 $ brain-even
 ```
+<a href="https://asciinema.org/a/uZF6lzmDOXafLTrbyUcrTw7KB" target="_blank"><img src="https://asciinema.org/a/uZF6lzmDOXafLTrbyUcrTw7KB.svg" /></a>
+
 ### Game: "Calculator"
 ```
 $ brain-calc
 ```
+<a href="https://asciinema.org/a/mrAa98XqLwMZMeesVMk3Qbpxn" target="_blank"><img src="https://asciinema.org/a/mrAa98XqLwMZMeesVMk3Qbpxn.svg" /></a>
+
 ### Game "GCD"
 ```
 $ brain-gcd
 ```
+<a href="https://asciinema.org/a/SAEpjEdh3d8aYp2HURR3ldrUY" target="_blank"><img src="https://asciinema.org/a/SAEpjEdh3d8aYp2HURR3ldrUY.svg" /></a>
+
 ### Game "Arithmetic progression"
 ```
 $ brain-progression
 ```
+<a href="https://asciinema.org/a/iIs2MQOEMN3U2fTZytKJVy9my" target="_blank"><img src="https://asciinema.org/a/iIs2MQOEMN3U2fTZytKJVy9my.svg" /></a>
 ### Game "Is it a prime number?"
 ```
 $ brain-prime
 ```
-
+<a href="https://asciinema.org/a/VmmXkNyvVOmrID4KJlvAndlUr" target="_blank"><img src="https://asciinema.org/a/VmmXkNyvVOmrID4KJlvAndlUr.svg" /></a>
