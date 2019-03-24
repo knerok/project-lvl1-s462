@@ -12,11 +12,10 @@ https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
 Task 6
 https://asciinema.org/a/7yIpIXKHXr8pRuj1OBfxKYjo4
 
-
 Task 7
-https://asciinema.org/a/BifgDi2MhNHWqjD07WtvN1zTl
+https://asciinema.org/a/0XCzVlEbN0wus5zjUbSu6Xcb8
 
 Task 8
-https://asciinema.org/a/BifgDi2MhNHWqjD07WtvN1zTl
+https://asciinema.org/a/0XCzVlEbN0wus5zjUbSu6Xcb8
 
 
