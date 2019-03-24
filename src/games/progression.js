@@ -1,29 +1,27 @@
 import startGame from '../core';
 import generateRandom from '../utils';
 
-const annotation = 'What number is missing in the progression?\n';
+const annotation = 'What number is missing in the progression?';
 
 const numberOfElements = 10;
 
 const getQuestion = (firstElement, diff, emptyPosition) => {
   let currentQuestion = '';
-  let currentElement = 0;
   for (let i = 0; i < numberOfElements; i += 1) {
-    currentElement = firstElement + diff * i;
-    currentQuestion += emptyPosition === i + 1 ? ' ..' : ` ${currentElement}`;
+    currentQuestion = emptyPosition === i ? `${currentQuestion}.. ` : `${currentQuestion}${firstElement + diff * i} `;
   }
   return currentQuestion;
 };
 
-const generateDataGameProgression = () => {
+const generateGameDataProgression = () => {
   const firstElement = generateRandom(-100000, 100000);
   const diff = generateRandom(-100, 100);
-  const emptyPosition = generateRandom(1, numberOfElements);
+  const emptyPosition = generateRandom(0, numberOfElements - 1);
   const question = getQuestion(firstElement, diff, emptyPosition);
-  const correctAnswer = (firstElement + diff * (emptyPosition - 1));
+  const correctAnswer = (firstElement + diff * emptyPosition).toString();
   return [question, correctAnswer];
 };
 
 export default () => {
-  startGame(annotation, generateDataGameProgression);
+  startGame(annotation, generateGameDataProgression);
 };

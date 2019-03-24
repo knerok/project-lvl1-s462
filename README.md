@@ -5,20 +5,18 @@
 
 Task 4
 https://asciinema.org/a/P4AhS4izreA5AyjeczS2LzGOT
-https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
 
 Task 5
 https://asciinema.org/a/4V4yJ1tAz5mTzcho77reYtsZN
 
 Task 6
-https://asciinema.org/a/Pz4QzkvM4FSKepFNS9gWmbDOF
 https://asciinema.org/a/7yIpIXKHXr8pRuj1OBfxKYjo4
 
 
 Task 7
-https://asciinema.org/a/7yIpIXKHXr8pRuj1OBfxKYjo4
-https://asciinema.org/a/TGNjA4YQy2OQQiCvC6yDMtyGi
+https://asciinema.org/a/BifgDi2MhNHWqjD07WtvN1zTl
 
 Task 8
-https://asciinema.org/a/TGNjA4YQy2OQQiCvC6yDMtyGi
+https://asciinema.org/a/BifgDi2MhNHWqjD07WtvN1zTl
+
 

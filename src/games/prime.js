@@ -1,7 +1,7 @@
 import startGame from '../core';
 import generateRandom from '../utils';
 
-const annotation = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const annotation = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) => {
   if (n <= 1) return false;
@@ -12,13 +12,12 @@ const isPrime = (n) => {
   return true;
 };
 
-const generateDataGamePrime = () => {
-  const random = generateRandom(-100000, 100000);
-  const question = ` ${random}`;
-  const correctAnswer = isPrime(random) ? 'yes' : 'no';
+const generateGameDataPrime = () => {
+  const question = generateRandom(-100000, 100000);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
 export default () => {
-  startGame(annotation, generateDataGamePrime);
+  startGame(annotation, generateGameDataPrime);
 };

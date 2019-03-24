@@ -2,23 +2,23 @@ import readlineSync from 'readline-sync';
 
 const numOfRounds = 3;
 
-const core = (annotation, games) => {
+const core = (annotation, generateGameData) => {
   console.log('Welcome to the Brain Games!');
   console.log(annotation);
-  const actual = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${actual}!\n`);
+  const userName = readlineSync.question('\nMay I have your name? ');
+  console.log(`Hello, ${userName}!\n`);
   for (let i = 1; i <= numOfRounds; i += 1) {
-    const [question, correctAnswer] = games();
-    console.log(`Question:${question}`);
+    const [question, correctAnswer] = generateGameData();
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === correctAnswer.toString()) {
+    if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${actual}!`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
-  console.log(`Congratulations, ${actual}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 export default core;

@@ -1,20 +1,16 @@
 import startGame from '../core';
 import generateRandom from '../utils';
 
-const annotation = 'Answer "yes" if number even otherwise answer "no".\n';
+const annotation = 'Answer "yes" if number even otherwise answer "no".';
 
-const isEven = (n) => {
-  const p = n < 0 ? n * (-1) : n;
-  return p % 2 === 0;
-};
+const isEven = n => Math.abs(n) % 2 === 0;
 
-const generateDataGameEven = () => {
-  const random = generateRandom(-100000, 100000);
-  const question = ` ${random}`;
-  const correctAnswer = isEven(random) ? 'yes' : 'no';
+const generateGameDataEven = () => {
+  const question = generateRandom(-100000, 100000);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
 export default () => {
-  startGame(annotation, generateDataGameEven);
+  startGame(annotation, generateGameDataEven);
 };
