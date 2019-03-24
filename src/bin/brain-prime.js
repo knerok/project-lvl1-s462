@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import asd from '../games/prime';
+import runGame from '../games/prime';
 
-asd();
+runGame();

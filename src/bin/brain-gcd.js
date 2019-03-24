@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import asd from '../games/gcd';
+import runGame from '../games/gcd';
 
-asd();
+runGame();
